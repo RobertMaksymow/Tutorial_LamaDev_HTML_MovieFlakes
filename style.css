@@ -149,7 +149,11 @@ body {
 }
 
 .movie-list-container {
-  padding: 20px;
+  padding: 0 20px;
+}
+
+.movie-list-wrapper {
+  position: relative;
 }
 
 .movie-list {
@@ -219,4 +223,14 @@ body {
   left: 40px;
   opacity: 0;
   transition: all 1s ease-in-out;
+}
+
+.slider-arrow {
+  font-size: 120px;
+  position: absolute;
+  top: 90px;
+  right: 0px;
+  color: lightgray;
+  opacity: 0.5;
+  cursor: pointer;
 }
