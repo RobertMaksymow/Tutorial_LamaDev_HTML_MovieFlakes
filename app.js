@@ -18,3 +18,15 @@ arrowSlider.forEach((arrow, index) => {
     }
   });
 });
+
+const toggleBall = document.querySelector(".toggle-ball");
+const themeItems = document.querySelectorAll(
+  ".container, .movie-list-title, .navbar-container, .sidebar, .sidebar-icons, .toggle"
+);
+
+toggleBall.addEventListener("click", () => {
+  themeItems.forEach((item) => {
+    item.classList.toggle("active");
+  });
+  toggleBall.classList.toggle("active");
+});

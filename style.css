@@ -92,6 +92,7 @@ body {
   transition: transform 0.3s;
   right: 1px;
   cursor: pointer;
+  transition: 0.3s ease all;
 }
 
 .sidebar {
@@ -239,17 +240,32 @@ body {
   cursor: pointer;
 }
 
-.container {
-  /* background-color: #151515;
-  min-height: calc(100vh - 50px); */
+.container.active {
   background-color: white;
 }
 
-.movie-list-title {
+.movie-list-title.active {
   color: black;
 }
 
-.navbar-container {
+.navbar-container.active {
   background-color: white;
   color: black;
+}
+
+.sidebar.active {
+  background-color: white;
+}
+
+.sidebar-icons.active {
+  color: black;
+}
+
+.toggle.active {
+  background-color: black;
+}
+
+.toggle-ball.active {
+  background-color: white;
+  transform: translate(-20px);
 }
