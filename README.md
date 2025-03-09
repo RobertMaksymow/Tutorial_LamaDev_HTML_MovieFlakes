@@ -5,6 +5,8 @@ Just pure HTML, CSS and JavaScript responsive landing page for 'movie app'.<br>
 <br>
 <br>
 Screenshots:<br>
+![image](https://github.com/user-attachments/assets/b681de48-9bce-4aa6-b0be-5c4eeb530650)
+
 
 <br>
 <br>
