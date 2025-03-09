@@ -6,9 +6,10 @@ arrowSlider.forEach((arrow, index) => {
   let clickCounter = 0;
   console.log(index, arrow, itemNumber);
   arrow.addEventListener("click", () => {
+    const ratio = Math.floor(window.innerWidth / 270);
     clickCounter++;
     // Value 4 is the number of images that are visible at the same time. It is not dynamic in case if you have larger screen.
-    if (itemNumber - (4 + clickCounter) >= 0) {
+    if (itemNumber - (4 + clickCounter) + (4 - ratio) >= 0) {
       movieLists[index].style.transform = `translateX(${
         movieLists[index].computedStyleMap().get("transform")[0].x.value - 300
       }px)`;
@@ -17,6 +18,7 @@ arrowSlider.forEach((arrow, index) => {
       clickCounter = 0;
     }
   });
+  console.log("Window Inner Width:", window.innerWidth);
 });
 
 const toggleBall = document.querySelector(".toggle-ball");
